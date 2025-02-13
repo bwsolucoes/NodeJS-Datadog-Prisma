@@ -1,0 +1,14 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Dummy model to allow Prisma to generate a client.
+// This model is not used by the application.
+model Dummy {
+  id Int @id @default(autoincrement())
+}
