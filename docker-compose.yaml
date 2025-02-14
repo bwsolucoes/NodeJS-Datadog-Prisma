@@ -20,7 +20,7 @@ services:
   datadog-agent:
     image: gcr.io/datadoghq/agent:latest
     environment:
-      - DD_API_KEY=da1863dda940795a8d7d0780c4ea3b57
+      - DD_API_KEY=da1863dda940795a8d7d0780c4ea3b57 # Sample (fake) API Key
       - DD_APM_ENABLED=true
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
